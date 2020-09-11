@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Health Insurance</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Health Insurance</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the amount of health insurance using Machine Learning
+          <br>
+        </h5>
+      </div>
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+        <div class="row">
+          
+          <div class="input-field col s4">
+            <label for="age"><b>Age</b></label>
+            <br>
+            <input placeholder="Age in number" name="Age" id="age" type="text" class="validate">
+          </div>
+          
+          <div class="input-field col s4">
+            <label for="sex"><b>Sex</b></label>
+            <br>
+            <input id="sex" name="Sex" placeholder="0 for Female, 1 for Male"  type="text" class="validate">
+          </div>
+
+          <div class="input-field col s4">
+            <label for="bmi"><b>BMI</b></label>
+            <br>
+            <input id="bmi" name="BMI" placeholder="BMI in numbers" type="text" class="validate">
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <label for="children"><b>Children</b></label>
+            <br>
+            <input placeholder="Number of Children" name="Children" id="children" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s4">
+            <label for="smoker"><b>Smoker</b></label>
+            <br>
+            <input id="smoker" name="Smoker" placeholder="0 for No, 1 for Yes"  type="text" class="validate">
+          </div>
+
+          <div class="input-field col s4">
+            <label for="region"><b>Region</b></label>
+            <br>
+            <input id="region" name="Region" placeholder="0 for NE, 1 for NW, 2 for SE, 3 for SW" type="text" class="validate">
+          </div>
+
+        </div>
+
+        <div class="row center">
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Insurance</button>
+        </div>
+
+      </form>
+      </div>
+
+      <br>
+      {{pred}}
+      <br>
+
+    </div>
+  </div>
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./js/materialize.js"></script>
+  <script src="./js/materialize.min.js"></script>
+
+  </body>
+</html>
+
