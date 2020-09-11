@@ -1,4 +1,4 @@
-# llSPS-INT-3520-Health-Insurance-Cost-prediction-Using-Watson-Auto-AI
+# llSPS-INT-3520-Health-Insurance-Cost-prediction-Using-Machine-Learning
 Health Insurance Cost prediction Using Machine Learning
 
 ### Table of Contents
