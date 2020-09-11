@@ -2,4 +2,4 @@
 Health Insurance Cost prediction Using Watson Auto AI
 
 ### Table of Contents
-* [Project Report] (#Project Report.docx)
+* [Project Report] (#Project Report)
